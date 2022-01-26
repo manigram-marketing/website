@@ -20,6 +20,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
+      - name: NodeJS Install
+        run: 'apt-get install nodejs'
+      - name: NPM Install
+        run: 'npm i'
+      - name: Angular build
+        run: 'ng build --prod'
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
