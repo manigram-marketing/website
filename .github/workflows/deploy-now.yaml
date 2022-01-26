@@ -26,6 +26,7 @@ jobs:
             node-version: '13.x'
       - name: Build
             run: npm run build
+      - name: deploy
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
