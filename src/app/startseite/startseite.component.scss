@@ -1,0 +1,167 @@
+.main {
+  background-image: url("../../assets/img/leistung.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .manigram {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    text-align: center;
+    color: white;
+  }
+}
+.slider_section {
+  flex: 1;
+  padding: 20%;
+  display: flex;
+  align-items: center;
+  padding: 45px 0;
+  background-color: gray;
+
+  .row {
+    align-items: center;
+  }
+
+  #customCarousel1 {
+    width: 100%;
+    position: unset;
+  }
+
+  .detail-box {
+    text-align: center;
+    color: white;
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {}
+
+    .btn-box {
+      display: flex;
+      justify-content: center;
+      margin: 0 -5px;
+      margin-top: 45px;
+
+      a {
+        margin: 5px;
+        text-align: center;
+        width: 185px;
+      }
+
+      .btn1 {
+        display: inline-block;
+        background-color: #f8842b;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        padding: 1% 2% 1%;
+        border-radius: 5px;
+        transition: all 0.3s;
+        text-transform: uppercase;
+        border: 1px solid #f8842b;
+      }
+    }
+  }
+
+  .img-box {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.service_section {
+  text-align: center;
+  background-image: url("../../assets/img/background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .heading_container {
+    align-items: center;
+    color: white;
+  }
+
+  .box {
+    margin-top: 25px;
+    // background: darken($color: $primary1, $amount: 10);
+    // color: $white;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.25);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      width: 275px;
+      height: 275px;
+      position: absolute;
+      right: -137.5px;
+      bottom: -137.5px;
+      background-color: lighten($color: #f8842b, $amount: 52);
+      z-index: -1;
+      border-radius: 100%;
+      transition: all 0.3s;
+    }
+
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 125px;
+      border-radius: 15px;
+      transition: all 0.3s;
+
+      img {
+        width: 75px;
+        transition: all 0.3s;
+      }
+    }
+
+    .detail-box {
+      margin-top: 15px;
+
+      h5 {
+        font-weight: bold;
+        position: relative;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    &:hover {
+      &::before {
+        transform: scale(5);
+        background-color: #f8842b;
+      }
+
+      color: rgb(136, 136, 136);
+    }
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+    a {
+      display: inline-block;
+      background-color: #f8842b;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      padding: 1% 2% 1%;
+      border-radius: 5px;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      border: 1px solid #f8842b;
+    }
+  }
+}
