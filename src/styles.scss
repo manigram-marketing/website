@@ -1,3 +1,8 @@
 @import "assets/css/bootstrap.css";
 @import "assets/css/responsive.css";
 @import "assets/css/style.scss";
+
+.center-with-display {
+  display: flex;
+  justify-content: center;
+}
