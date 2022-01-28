@@ -8,12 +8,14 @@ import { StartseiteComponent } from './startseite/startseite.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    StartseiteComponent
+    StartseiteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
