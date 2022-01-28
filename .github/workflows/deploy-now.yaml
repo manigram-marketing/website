@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Change Directory
+        run: cd ..
       - name: Use Node 13.x
         uses: actions/setup-node@v1
         with:
@@ -18,6 +20,7 @@ jobs:
         run: npm run build
   deploy-now:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Fetch project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
