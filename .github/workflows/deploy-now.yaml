@@ -13,7 +13,6 @@ jobs:
         with:
             node-version: '13.x'
       - name: Get Dependencies
-        run: cd website
         run: npm install
       - name: Build
         run: npm run build
