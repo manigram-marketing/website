@@ -29,11 +29,6 @@ jobs:
           api-key: ${{ secrets.IONOS_API_KEY }}
           project: ${{ secrets.IONOS_PROJECT_ID }}
           service-host: api-eu.ionos.space
-      - name: checkout
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/checkout@v2
-        with:
-          submodules: 'recursive'
       - name: Deploy
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
