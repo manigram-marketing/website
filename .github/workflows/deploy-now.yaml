@@ -15,7 +15,7 @@ jobs:
         with:
             node-version: '13.x'
       - name: ls
-        run: ls
+        run: dir
       - name: Get Dependencies
         run: npm install
       - name: Build
