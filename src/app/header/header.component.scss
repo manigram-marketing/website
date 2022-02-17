@@ -1,103 +1,58 @@
-.header_section {
-  padding: 15px 0;
-  background-color: gray;
-  .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
+.header {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .navigation-badge {
+    width: 0px;
+    height: 0px;
+    content: '';
+    visibility: hidden;
   }
-}
-
-.navbar-brand {
-  span {
-    font-weight: bold;
-    color: white;
-    font-size: 24px;
-  }
-}
-
-.custom_nav-container {
-  padding: 0;
-
-  .navbar-nav {
-    margin: auto;
-
-    .nav-item {
-      .nav-link {
-        padding: 5px 25px;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        border-radius: 5px;
-        transition: all 0.3s;
-      }
-
-      &:hover,
-      &.active {
-        .nav-link {
-          color: black;
-          background-color: white;
-        }
-      }
-    }
-  }
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler {
-  padding: 0;
-  width: 37px;
-  height: 42px;
-  transition: all 0.3s;
-
-  span {
-    display: block;
-    width: 35px;
-    height: 4px;
-    background-color: white;
-    margin: 7px 0;
-    transition: all 0.3s;
+  .logo {
     position: relative;
-    border-radius: 5px;
-    transition: all 0.3s;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: white;
-      top: -10px;
-      border-radius: 5px;
-      transition: all 0.3s;
-    }
-
-    &::after {
-      top: 10px;
-    }
+    max-width: 150px;
   }
-
-  &[aria-expanded="true"] {
-    transform: rotate(360deg);
-
-    span {
-      transform: rotate(45deg);
-
-      &::before,
-      &::after {
-        transform: rotate(90deg);
-        top: 0;
+  .navigation {
+    position: relative;
+    display: flex;
+    li {
+      list-style: none;
+      margin-left: 40px;
+      a {
+        display: inline-block;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
       }
     }
-
-    .s-1 {
-      transform: rotate(45deg);
-      margin: 0;
-      margin-bottom: -4px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 40px 30px;
+    .navigation-badge {
+      position: absolute;
+      right: 50px;
+      font-size: 50px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      width: fit-content;
+      height: fit-content;
+      visibility: visible;
+    }
+    .navigation {
+      width: 0px;
+      height: 0px;
+      content: '';
+      visibility: hidden;
     }
   }
 }

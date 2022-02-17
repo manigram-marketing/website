@@ -1,0 +1,22 @@
+.footer {
+  margin-top: 50px;
+  background: #ec580a;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  color: white;
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    .col {
+      flex-basis: 25%;
+      padding: 10px;
+    }
+  }
+  .payment {
+    font-size: 40px;
+  }
+}
