@@ -10,11 +10,6 @@ export class StartseiteComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    document.addEventListener('scroll', this.onScroll)
-  }
-
-  onScroll(): void {
-    console.log("test");
   }
 
 }

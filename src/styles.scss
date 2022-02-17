@@ -1,8 +1,64 @@
-@import "assets/css/bootstrap.css";
-@import "assets/css/responsive.css";
-@import "assets/css/style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+@keyframes button-animation {
+  from {
+    background-color: #ec580a;
+    color: white;
+    border: 1px solid transparent;
+  }
+  to {
+    background-color: transparent;
+    color: #ec580a;
+    border: 1px solid #ec580a;
+  }
+}
 
 .center-with-display {
   display: flex;
   justify-content: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d2d2d;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  font-family: 'Barlow', sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  &.btn-primary {
+    background-color: #ec580a;
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ec580a;
+    border: 1px solid #ec580a;
+    animation-name: button-animation;
+    animation-duration: 0.5s;
+    padding: 9px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
