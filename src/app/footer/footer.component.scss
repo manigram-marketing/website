@@ -17,6 +17,10 @@
     }
   }
   .payment {
-    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    ion-icon {
+      font-size: 40px;
+    }
   }
 }

@@ -4,11 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 10px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  background-color: rgba(128, 128, 128, 0.84);
+  transition: 0.2s;
   .navigation-badge {
     width: 0px;
     height: 0px;
@@ -17,7 +19,8 @@
   }
   .logo {
     position: relative;
-    max-width: 150px;
+    max-width: 100px;
+    transition: 0.2s;
   }
   .navigation {
     position: relative;
